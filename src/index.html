@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="description" content="description">
+    <meta name="keywords" content="keywords">
+
+    <meta name="theme-color" content="#000000" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="NAME" />
+    <meta name="apple-mobile-web-app-title" content="NAME" />
+    <meta name="msapplication-starturl" content="/" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <title>Title</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <h1 class="title">TITLE</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="text-center navbar-nav mr-auto">
+                    <li class="nav-item">
+                            <a class="nav-link" href="https://ol-web.github.io">My website</a>
+                        </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/oL-web">My Github</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/oL-web/parcel-boilerplate-pwa">Repo</a>
+                </li>        
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container main-container p-4">
+        <div class="text-center">
+            <img src="favicon.png">
+            <p>☝️☝️☝️ It's minifed!</p>
+            <h2 class="package-title">parcel-boilerplate-pwa</h2>
+        </div>
+        <p>Parcel boilerplate for creating Progressive Web Apps and regular web apps with all the good stuff Parcel provides
+            plus additional plugins, configuration and popular libraries out of the box.</p>
+        <iframe src="https://ghbtns.com/github-btn.html?user=oL-web&repo=parcel-boilerplate-pwa&type=star&count=true&size=large"
+            frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+        <hr class="my-4">
+        <h3>Installation and usage:</h3>
+        <code>
+            npm install -g parcel-bundler<br>
+            npm run dev<br>
+            npm run build<br>
+        </code>
+        <hr class="my-4">
+        <h3>The features include:</h3>
+        <ul>
+            <li>Everything that
+                <a href="https://github.com/parcel-bundler/parcel">Parcel</a> does out of the box</li>
+            <li>Generating service workers to cache the assets you use and enable PWA support with
+                <a href="https://github.com/mischnic/parcel-plugin-sw-cache">parcel-plugin-sw-cache</a>
+            </li>
+            <li>Ready out of the box boilerplate with filled with placeholder HTML, SCSS, JS and manifest.webmanifest. You only
+                need to rename what you need</li>
+            <li>Supporting all the new cool JS features with
+                <a href="https://www.npmjs.com/package/babel-preset-stage-3">babel-preset-stage-3</a>
+            </li>
+            <li>Autoprefixer for the last 999 browser versions</li>
+            <li>Minifying images to your desired quality with
+                <a href="https://github.com/DeMoorJasper/parcel-plugin-imagemin">parcel-plugin-imagemin</a>
+            </li>
+            <li>Keeping the /dist directory clean with
+                <a href="https://github.com/qinshixixing/parcel-plugin-clean-dist">parcel-plugin-clean-dist</a>
+            </li>
+            <li>Some useful libraries ready to use such as
+                <a href="https://github.com/lodash/lodash">Lodash</a>,
+                <a href="https://github.com/visionmedia/superagent">SuperAgent</a>,
+                <a href="https://github.com/twbs/bootstrap">Bootstrap 4</a> ,
+                <a href="https://github.com/jquery/jquery">jQuery</a>
+            </li>
+        </ul>
+        <hr class="my-4">
+        <h3>Things for you to do:</h3>
+        <ul>
+            <li class="my-3">Fill out the manifest.webmanifest file. Your icon should be at least 192x192px for additional functionality.
+                Splash screen support requires bigger picture so it's up to you</li>
+            <li class="my-3">Fill out the head section of index.html, some of it is similiar to the manifest</li>
+            <li class="my-3">Service Workers in development are disabled by default. You can test them by setting cache.inDev to true in package.json
+                but they can sometimes screw something up during development like loading outdated files so you should use
+                incognito mode etc.</li>
+            <li class="my-3">You can adjust the quality of minifed images in imagemin.config.js. Quality 60 seems like a fairly good balance
+                between quality and size but you can turn it down lower</li>
+        </ul>
+        <hr class="my-4">
+        <h3>Is there something wrong?</h3>
+        <p>Please tell me!</p>
+    </main>
+
+    <script src="js/index.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(function (registration) {
+                    console.log('Registration successful, scope is:', registration.scope);
+                })
+                .catch(function (error) {
+                    console.log('Service worker registration failed, error:', error);
+                });
+        }
+    </script>
+</body>
+
+</html>

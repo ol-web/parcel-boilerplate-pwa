@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'mixins';
+@import 'placeholders';
+
+// @import 'config';
+
+body {
+    background: #261409;
+}
+.main-container{
+    background:white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom:50px;
+}
+.navbar-light {
+    background:#ebe1d0;
+}
+.package-title{
+    word-wrap: break-word;
+}
+
+@import 'media';

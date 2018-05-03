@@ -1,0 +1,30 @@
+{
+  "name": "parcel-boilerplate-pwa",
+  "version": "0.0.1",
+  "description": "Parcel boilerplate for creating Progressive Web Apps and regular web apps with all the good stuff Parcel provides plus additional plugins, configuration and popular libraries out of the box.",
+  "author": "ol-web",
+  "scripts": {
+    "build": "parcel build src/index.html --no-cache --public-url \".\"",
+    "dev": "parcel src/index.html"
+  },
+  "cache": {
+    "inDev": false,
+    "strategy": "default"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "node-sass": "^4.9.0",
+    "parcel-plugin-clean-dist": "0.0.6",
+    "parcel-plugin-imagemin": "^1.1.0",
+    "parcel-plugin-sw-cache": "^0.2.3",
+    "postcss-modules": "^1.1.0"
+  },
+  "dependencies": {
+    "lodash": "latest",
+    "superagent": "latest",
+    "bootstrap": "latest",
+    "jquery": "latest",
+    "popper.js": "latest"
+  }
+}

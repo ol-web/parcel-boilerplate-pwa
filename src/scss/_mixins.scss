@@ -1,0 +1,10 @@
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin absolute-size($top, $right, $bottom, $left) {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
