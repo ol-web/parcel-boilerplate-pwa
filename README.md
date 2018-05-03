@@ -8,6 +8,8 @@ Parcel boilerplate for creating Progressive Web Apps and regular web apps with a
 
 `npm install -g parcel-bundler`
 
+`npm install`
+
 `npm run dev`
 
 `npm run build `
