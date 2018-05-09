@@ -1,4 +1,4 @@
-## parcel-boilerplate-pwa
+# parcel-boilerplate-pwa
 Parcel boilerplate for creating Progressive Web Apps and regular web apps with all the good stuff Parcel provides plus additional plugins, configuration and popular libraries out of the box.
 
 * * *
