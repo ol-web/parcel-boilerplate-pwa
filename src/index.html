@@ -33,15 +33,15 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="text-center navbar-nav mr-auto">
-                    <li class="nav-item">
-                            <a class="nav-link" href="https://ol-web.github.io">My website</a>
-                        </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://ol-web.github.io">My website</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://github.com/oL-web">My Github</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://github.com/oL-web/parcel-boilerplate-pwa">Repo</a>
-                </li>        
+                </li>
             </ul>
         </div>
     </nav>
@@ -65,6 +65,9 @@
             npm run build<br>
         </code>
         <hr class="my-4">
+        <h3>Example of React:</h3>
+        <div class="app"></div>
+        <hr class="my-4">
         <h3>The features include:</h3>
         <ul>
             <li>Everything that
@@ -72,17 +75,19 @@
             <li>Generating service workers to cache the assets you use and enable PWA support with
                 <a href="https://github.com/mischnic/parcel-plugin-sw-cache">parcel-plugin-sw-cache</a>
             </li>
-            <li>Ready out of the box boilerplate with filled with placeholder HTML, SCSS, JS and manifest.webmanifest. You only
-                need to rename what you need</li>
+            <li>Ready out of the box project structure filled out with placeholder HTML, SCSS, JS and web manifest...</li>
+            <li>...but there's also a project structure for
+                <a href="https://github.com/facebook/react">React</a> +
+                <a href="https://github.com/reactjs/react-redux">Redux</a> +
+                <a href="https://github.com/ReactTraining/react-router">Router</a> if you need to use these instead...</li>
+            <li>...aaand if you're using React, you can also use the beatiful
+                <a href="https://github.com/zeit/styled-jsx">styled-jsx (CSS-in-JS)</a>
+                component as well</li>
             <li>Supporting all the new cool JS features with
                 <a href="https://www.npmjs.com/package/babel-preset-stage-3">babel-preset-stage-3</a>
             </li>
-            <li>Autoprefixer for the last 999 browser versions</li>
             <li>Minifying images to your desired quality with
                 <a href="https://github.com/DeMoorJasper/parcel-plugin-imagemin">parcel-plugin-imagemin</a>
-            </li>
-            <li>Keeping the /dist directory clean with
-                <a href="https://github.com/qinshixixing/parcel-plugin-clean-dist">parcel-plugin-clean-dist</a>
             </li>
             <li>Some useful libraries ready to use such as
                 <a href="https://github.com/lodash/lodash">Lodash</a>,
@@ -94,6 +99,8 @@
         <hr class="my-4">
         <h3>Things for you to do:</h3>
         <ul>
+            <li class="my-3">Delete what you don't need from the project src directory. If you don't need React you can delete the entire
+                /js directory(just leave an empty index.js inside it). You can always start from scratch too.</li>
             <li class="my-3">Fill out the manifest.webmanifest file. Your icon should be at least 192x192px for additional functionality.
                 Splash screen support requires bigger picture so it's up to you</li>
             <li class="my-3">Fill out the head section of index.html, some of it is similiar to the manifest</li>

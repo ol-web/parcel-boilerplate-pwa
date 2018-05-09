@@ -13,17 +13,33 @@
 import "../scss/bootstrap-lux.min.scss";
 
 import '../scss/styles.scss';
-import log from './log';
 
-const obj = { prop: 32 };
+import React from 'react';
+import { render } from 'react-dom';
 
-const arrowFn = () => {
+import { Provider } from "react-redux";
+import store from "./store";
 
-};
+import TestParagraph from "./components/TestParagraph";
+import TestButton from "./components/TestButton";
 
-const spreadObj = {
-    ...obj,
-    arrowFn
-};
+const obj = { prop: "something" };
+const arrowFn = () => { };
+const spreadObj = { ...obj, arrowFn };
+console.log(spreadObj);
 
-log(spreadObj);
+class App extends React.Component {
+    render() {
+        return (
+            <Provider store={store}>
+                <div>
+                    <TestParagraph text="This paragraph is rendered by React" />
+                    <TestButton />
+                </div>
+            </Provider>
+        );
+    }
+}
+
+render(<App />, document.querySelector(".app"));
+
